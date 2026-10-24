@@ -1,0 +1,26 @@
+{
+  "name": "velora-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "seed": "node src/seed.js",
+    "test": "node --test",
+    "test:security": "node --test test/security.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.9.5",
+    "@supabase/supabase-js": "^2.76.1",
+    "express-rate-limit": "^7.5.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.4",
+    "mongodb-memory-server": "^10.2.3"
+  }
+}

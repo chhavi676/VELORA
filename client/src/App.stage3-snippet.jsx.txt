@@ -1,0 +1,10 @@
+// STAGE 3 INTEGRATION SNIPPET — merge into client/src/App.jsx; do not replace the whole file.
+// 1. Add this import with your other imports:
+import AuthPanel from "./components/AuthPanel.jsx";
+
+// 2. Render <AuthPanel /> where the account/sign-in section should appear, for example
+// near the end of your existing App component's main JSX, before its closing main/div:
+<AuthPanel />
+
+// If your App.jsx has a named page/layout structure, put <AuthPanel /> inside the relevant
+// account area instead of blindly replacing the existing JSX.

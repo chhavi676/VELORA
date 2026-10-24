@@ -1,0 +1,17 @@
+{
+  "name": "velora",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n CLIENT,SERVER -c magenta,cyan \"npm:dev:client\" \"npm:dev:server\"",
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server run dev",
+    "build": "npm --prefix client run build",
+    "test": "npm --prefix server test",
+    "test:security": "npm --prefix server run test:security"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
